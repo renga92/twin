@@ -1,0 +1,240 @@
+$bg-color : #FFFFFF;
+
+
+@mixin mobile {
+    @media (max-width: 360px){
+        @content;
+    }
+}
+
+
+// General css for surface level customization
+//======================================================
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #E5E5E5;
+    font-family: "HKGrotesk-Regular", sans-serif;
+}
+
+
+// Main site wrapper
+// Static width for large screen
+// But in mobile device, layout will be fluid
+//=========================================================
+
+
+#site-wrapper{
+    max-width : 360px;
+    background-color: $bg-color;
+    position : relative;
+    left : 50%;
+    transform : translateX(-50%);
+
+    overflow: hidden;
+
+    @include mobile{
+        width: 100%;
+    }
+}
+
+
+// Header css
+//================================================
+
+header{
+    display : flex;
+    justify-content: space-between;
+    align-items: center;
+    padding : 30px 30px 20px 30px;
+    height : 80px;
+    box-shadow: -1px -10px 30px 3px rgba(0,0,0,0.75);
+    position: relative;
+    z-index: 1;
+}
+
+.header-btn{
+
+    width : 107px;
+    height : 48px;
+    background-color: $bg-color;
+    border : 1px solid #DDDDDD;
+    border-radius : 10px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding : 8px;
+    font-weight : 600;
+
+    &:focus{
+        outline : none;
+    }
+
+    span{
+        color : #FF5A00;
+        font-size : 14px;
+        text-align: left;
+        line-height : 18px;
+        margin-left : 8px;
+    }
+
+}
+
+
+// Banner section css
+//===================================
+
+.foot-note{
+    position : absolute;
+    margin: 0;
+    bottom: 10px;
+    right : 20px;
+    font-size: 12px;
+}
+
+.banner{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    background: linear-gradient(180deg, #00CC75 0%, #0BAF6A 100%, #017A47 100%);
+    color : #ffffff;
+    padding : 40px 0;
+
+}
+
+.bnr-header{
+    h2{
+        font-family: "HKGrotesk-Bold", sans-serif;
+        font-weight : bold;
+        font-size : 42px;
+        margin-bottom : 0;
+        text-align: center;
+    }
+}
+
+.bnr-content{
+    display : flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    padding : 0 18px;
+    margin-top : 22px;
+    position : relative;
+}
+
+.bnr-col{
+    width : 50%;
+    .bnr-sub{
+        
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        flex-direction: row;
+        margin-bottom: 15px;
+        &:last-child{
+            margin-bottom : 0;
+        }
+    }
+
+    .bnr-sub-text{
+        margin-left : 15px;
+        h4{
+            font-size: 24px;
+            font-weight : bold;
+            line-height : 32px;
+
+        }
+    }
+}
+
+
+.bnr-img-wrap{
+    position: absolute;
+    width : 100%;
+    bottom : 0;
+}
+
+.bnr-hero-img{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    img{
+        width : 230px;
+        bottom : 0;
+        transform : translate(-30px, 10px)
+        
+    }
+}
+
+
+// Doctors section css
+//========================================================
+
+
+.doctors-title{
+
+    h2{
+        font-family: "HKGrotesk-Bold", sans-serif;
+        font-size : 26px;
+        font-weight: bold;
+        color : #183B56;
+        text-align: center;
+        padding : 0 15px;
+        line-height: 36px;
+        margin-top: 15px;
+    }
+}
+
+
+.doctors-grid{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+    img{
+        height : 100%;
+    }
+}
+
+.grid-item{
+    width : 80px;
+    height: 70px;
+
+    background-color: gray;
+    border : 1px solid saddlebrown;
+    text-align: center;
+}
+
+// .item-double-column{
+//     grid-column: 1 / span 2;
+
+// }
+
+// .item-double-row{
+//     grid-column-start : 2;
+//     grid-row-start : 1;
+//     grid-row-end: 3;
+// }
+
+.width-2{
+
+    width : 160px;
+
+}
+
+.height-2{
+    height : 100px;
+    width : 160px; 
+}

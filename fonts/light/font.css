@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'HKGrotesk-Light';
+  src: url('HKGrotesk-Light.eot');
+  src: url('HKGrotesk-Light.eot?#iefix') format('embedded-opentype'),
+       url('HKGrotesk-Light.svg#HKGrotesk-Light') format('svg'),
+       url('HKGrotesk-Light.ttf') format('truetype'),
+       url('HKGrotesk-Light.woff') format('woff'),
+       url('HKGrotesk-Light.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+

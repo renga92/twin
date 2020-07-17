@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'HKGrotesk-SemiBold';
+  src: url('HKGrotesk-SemiBold.eot');
+  src: url('HKGrotesk-SemiBold.eot?#iefix') format('embedded-opentype'),
+       url('HKGrotesk-SemiBold.svg#HKGrotesk-SemiBold') format('svg'),
+       url('HKGrotesk-SemiBold.ttf') format('truetype'),
+       url('HKGrotesk-SemiBold.woff') format('woff'),
+       url('HKGrotesk-SemiBold.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+

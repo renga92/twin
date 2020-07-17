@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'HKGrotesk-ExtraBold';
+  src: url('HKGrotesk-ExtraBold.eot');
+  src: url('HKGrotesk-ExtraBold.eot?#iefix') format('embedded-opentype'),
+       url('HKGrotesk-ExtraBold.svg#HKGrotesk-ExtraBold') format('svg'),
+       url('HKGrotesk-ExtraBold.ttf') format('truetype'),
+       url('HKGrotesk-ExtraBold.woff') format('woff'),
+       url('HKGrotesk-ExtraBold.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
