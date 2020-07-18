@@ -470,7 +470,7 @@ header {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-top: 13px;
+  margin-top: 15px;
 }
 
 .pricing-grid-services img {
