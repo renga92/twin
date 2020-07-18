@@ -4,16 +4,20 @@ $(function(){
         topSpacing : 0
     });
 
-    $('#doctors-grid').isotope({ 
-
-        itemSelector : ".grid-item",
-        layoutMode: 'masonry',
-        percentPosition : true,
-        
-        
-    })
-
     
+    
+    $('#doctor-grid').isotope({
+
+      itemSelector: '.grid-item',
+      layoutMode : 'masonry',
+      percentPosition: true,
+      masonry: {
+        columnWidth: 15
+      }
+
+    })
+    
+  
 
 
     

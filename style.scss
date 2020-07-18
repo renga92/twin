@@ -198,61 +198,56 @@ header{
 }
 
 
-.doctors-grid{
+#doctor-grid{
+    transition : all 0.5s ease;
     
     
     img{
         width : 60px;
+        // transform : scale(0.5);
+        transition : all 0.5s ease;
+        cursor : pointer;
+        position: absolute;
+        top : 50%;
+        left : 50%;
+        transform : translate(-50%, -50%)
+        
+
     }
 }
 
-// .grid-item{
-//     width : 80px;
-//     height: 70px;
-
-//     background-color: gray;
-//     border : 1px solid saddlebrown;
-//     text-align: center;
-// }
-
-// .item-double-column{
-//     grid-column: 1 / span 2;
-
-// }
-
-// .item-double-row{
-//     grid-column-start : 2;
-//     grid-row-start : 1;
-//     grid-row-end: 3;
-// }
-
-// .width-2{
-
-//     width : 160px;
-
-// }
-
-// .height-2{
-//     height : 100px;
-//     width : 160px; 
-// }
-
 .grid-item {
+    position : relative;
     float: left;
+    height : 80px;
     width : 25%;
     // background: #0D8;
     // border: 2px solid #333;
-    // border-color: hsla(0, 0%, 0%, 0.7);
-    text-align: center;
-  }
+    border-color: hsla(0, 0%, 0%, 0.7);
+    transition : all 0.5s ease;
+}
+
+
+.grid-item--height1{
+    height : 110px;
+    img{
+        width : 65px !important;
+    }
+}
+
   
-  .grid-sizer{
-      width : 25%;
-  }
-  .grid-item--width2 { 
-      width: 180px; 
-      text-align: center;
+.grid-item--height2{
+    height : 160px;
+
+    img{
+        width : 70px !important;
+        transform : translate(-30%, -50%) !important;
     }
-  .grid-item--height2 { 
-      height: 120px; 
+}
+
+.grid-item--width2{
+    width : 50%;
+    img{
+        transform : translate(20%, -50%) !important;
     }
+}

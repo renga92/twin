@@ -208,26 +208,57 @@ header {
   margin-top: 15px;
 }
 
-.doctors-grid img {
+#doctor-grid {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#doctor-grid img {
   width: 60px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .grid-item {
+  position: relative;
   float: left;
+  height: 80px;
   width: 25%;
-  text-align: center;
+  border-color: rgba(0, 0, 0, 0.7);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
-.grid-sizer {
-  width: 25%;
+.grid-item--height1 {
+  height: 110px;
 }
 
-.grid-item--width2 {
-  width: 180px;
-  text-align: center;
+.grid-item--height1 img {
+  width: 65px !important;
 }
 
 .grid-item--height2 {
-  height: 120px;
+  height: 160px;
+}
+
+.grid-item--height2 img {
+  width: 70px !important;
+  -webkit-transform: translate(-30%, -50%) !important;
+          transform: translate(-30%, -50%) !important;
+}
+
+.grid-item--width2 {
+  width: 50%;
+}
+
+.grid-item--width2 img {
+  -webkit-transform: translate(20%, -50%) !important;
+          transform: translate(20%, -50%) !important;
 }
 /*# sourceMappingURL=style.css.map */
