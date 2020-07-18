@@ -1,7 +1,8 @@
 $(function(){
 
     $('#sticky-header').sticky({
-        topSpacing : 0
+        topSpacing : 0,
+        zIndex : 1
     });
 
     
@@ -12,9 +13,15 @@ $(function(){
       layoutMode : 'masonry',
       percentPosition: true,
       masonry: {
-        columnWidth: 15
+        
       }
 
+    })
+
+    $(".grid-item img").on('click', function(){
+      $(".grid-item img").removeClass('scale-up');
+      $(this).addClass('scale-up');
+      
     })
     
   
