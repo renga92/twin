@@ -42,7 +42,7 @@ body {
     overflow: hidden;
 
     @include mobile{
-        width: 100%;
+        max-width: 100%;
     }
 }
 

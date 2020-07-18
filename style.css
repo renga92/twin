@@ -24,9 +24,9 @@ body {
   overflow: hidden;
 }
 
-@media (max-width: 360px) {
+@media (max-width: 576px) {
   #site-wrapper {
-    width: 100%;
+    max-width: 100%;
   }
 }
 
