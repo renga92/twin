@@ -2,7 +2,7 @@ $bg-color : #FFFFFF;
 
 
 @mixin mobile {
-    @media (max-width: 360px){
+    @media (max-width: 576px){
         @content;
     }
 }
