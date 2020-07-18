@@ -199,23 +199,21 @@ header{
 
 
 .doctors-grid{
-    width: 100%;
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    grid-gap: 10px;
+    
+    
     img{
-        height : 100%;
+        width : 60px;
     }
 }
 
-.grid-item{
-    width : 80px;
-    height: 70px;
+// .grid-item{
+//     width : 80px;
+//     height: 70px;
 
-    background-color: gray;
-    border : 1px solid saddlebrown;
-    text-align: center;
-}
+//     background-color: gray;
+//     border : 1px solid saddlebrown;
+//     text-align: center;
+// }
 
 // .item-double-column{
 //     grid-column: 1 / span 2;
@@ -228,13 +226,33 @@ header{
 //     grid-row-end: 3;
 // }
 
-.width-2{
+// .width-2{
 
-    width : 160px;
+//     width : 160px;
 
-}
+// }
 
-.height-2{
-    height : 100px;
-    width : 160px; 
-}
+// .height-2{
+//     height : 100px;
+//     width : 160px; 
+// }
+
+.grid-item {
+    float: left;
+    width : 25%;
+    // background: #0D8;
+    // border: 2px solid #333;
+    // border-color: hsla(0, 0%, 0%, 0.7);
+    text-align: center;
+  }
+  
+  .grid-sizer{
+      width : 25%;
+  }
+  .grid-item--width2 { 
+      width: 180px; 
+      text-align: center;
+    }
+  .grid-item--height2 { 
+      height: 120px; 
+    }

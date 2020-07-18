@@ -208,33 +208,26 @@ header {
   margin-top: 15px;
 }
 
-.doctors-grid {
-  width: 100%;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: auto auto auto auto;
-      grid-template-columns: auto auto auto auto;
-  grid-gap: 10px;
-}
-
 .doctors-grid img {
-  height: 100%;
+  width: 60px;
 }
 
 .grid-item {
-  width: 80px;
-  height: 70px;
-  background-color: gray;
-  border: 1px solid saddlebrown;
+  float: left;
+  width: 25%;
   text-align: center;
 }
 
-.width-2 {
-  width: 160px;
+.grid-sizer {
+  width: 25%;
 }
 
-.height-2 {
-  height: 100px;
-  width: 160px;
+.grid-item--width2 {
+  width: 180px;
+  text-align: center;
+}
+
+.grid-item--height2 {
+  height: 120px;
 }
 /*# sourceMappingURL=style.css.map */
