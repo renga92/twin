@@ -238,8 +238,8 @@ header{
     float: left;
     height : 80px;
     width : 25%;
-    background: #0D8;
-    border: 2px solid #333;
+    // background: #0D8;
+    // border: 2px solid #333;
     border-color: hsla(0, 0%, 0%, 0.7);
     transition : all 0.5s ease;
 }
@@ -530,6 +530,236 @@ header{
         width : 47%;
         margin-bottom : 13px;
     }
+}
+
+
+.pricing-amount{
+    text-align: left;
+    padding-left: 15px;
+    border-top : 1px solid #E5EAF4;
+    margin-top : 15px;
+    h1{
+
+        font-family: "HKGrotesk-Bold", sans-serif;
+        font-size: 40px;
+        font-weight : bold;
+        color :  #2F9D6E;
+        line-height : 48px;
+        margin-top : 15px;
+
+        span{
+            font-family: "HKGrotesk-Regular", sans-serif;
+            color : #5A7184;
+            font-size : 18px;
+            font-weight: normal;
+        }
+
+    }
+    
+}
+
+
+.pricing-btn-wrap{
+    padding : 0 10px;
+}
+
+.pricing-btn{
+
+    background-color : #2F9D6E;
+    color : white;
+    font-size: 18px;
+    font-weight : bold;
+    padding : 10px 30px;
+    width : 100%;
+    display: block;
+    border-radius : 8px;
+    transition : all 0.3s ease;
+    margin-top : 18px;
+
+    &:hover{
+        text-decoration : none;
+        background-color: lighten(#2F9D6E, 5%);
+        color : white;
+    }
+
+    img{
+        margin-left : 15px;
+        transform: translateY(-2px);
+    }
 
 }
 
+
+//Question section style
+//=====================================
+
+.question{
+
+    margin-top : 8px;
+    padding : 60px 40px;
+    padding-bottom : 40px;
+    text-align: center;
+    background-color: $bg-color;
+}
+
+.question-title{
+
+    h3{
+        font-family: "HKGrotesk-Bold", sans-serif;
+        margin-bottom : 0;
+        font-size : 24px;
+        font-weight : bold;
+        color :  #183B56;
+    }
+
+}
+
+.question-subtitle{
+
+    p{
+        font-size: 16px;
+        line-height : 26px;
+        color : #5A7184;
+        margin-top : 20px;
+        margin-bottom : 30px;
+    }
+
+}
+
+.question-block-wrap{
+    width : 100%;
+}
+
+.question-block{
+    border : 1px solid #E5EAF4;
+    padding : 30px 5px;
+    border-radius :  8px;
+    margin-bottom : 15px;
+    box-shadow : 0px 6px 10px rgba(0, 0, 0, 0.03);
+
+
+    &:last-child{
+
+        padding : 15px 5px;
+        margin-bottom: 0;
+    }
+
+
+    h2{
+        font-family: "HKGrotesk-Bold", sans-serif;
+        font-weight : bold;
+        font-size : 22px;
+        color : #183B56;
+        margin : 0;
+        margin-top : 15px;
+        margin-bottom : 8px;
+    }
+
+    h3{
+        color : #00A651;
+        font-size : 14px;
+        text-transform : uppercase;
+        margin : 0;
+        margin-bottom : 5px;
+
+        span{
+            margin-left : 10px;
+        }
+
+    }
+
+    h4{
+        color : #5A7184;
+        font-size : 14px;
+        margin : 0;
+    }
+
+}
+
+// Bottom section style
+//==================================
+
+.bottom-sec{
+
+    text-align: center;
+    padding : 40px 30px 100px 30px;
+    background-color: $bg-color;
+    margin-top : 8px;
+
+}
+
+.bottom-block{
+    padding : 20px 30px;
+
+    img{
+        margin-bottom : 10px;
+    }
+
+    p{
+        font-size : 20px;
+        line-height : 24px;
+        margin-top : 10px;
+
+        span{
+
+            font-weight : bold;
+        }
+    }
+
+    .bottom-quote{
+
+        font-size : 12px;
+        color : #5A7184;
+        margin-top : 5px;
+
+    }
+
+    .bottom-block-icons{
+        img{
+            margin-left : 15px;
+
+            &:first-child{
+                margin-left : 0;
+            }
+        }
+    }
+    
+}
+
+
+.bottom-block-card{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border : 1px solid #EEEEEE;
+    border-radius : 52px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
+    padding : 10px;
+    
+
+
+    img{
+        border-radius: 50%;
+    }
+
+    .bottom-card-text{
+        text-align: left;
+        margin-left : 10px;
+    }
+
+    h5{
+
+        font-family: "HKGrotesk-SemiBold", sans-serif;
+        font-size : 18px;
+        color : #666666;
+    }
+
+    h6{
+
+        text-transform: uppercase;
+        color : #36B37E;
+
+    }
+
+
+}
