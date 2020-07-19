@@ -9,9 +9,7 @@
     <!--static plugins integration-->
     <link rel="stylesheet" href="plugins/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="plugins/unitegallery/css/unite-gallery.css">
-    <link rel="stylesheet" href="plugins/unitegallery/themes/default/ug-theme-default.css">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bricklayer/0.4.2/bricklayer.min.css">
+    <link rel="stylesheet" href="plugins/slick/slick/slick.css">
 
     <!--Embeding local fonts-->
     <link rel="stylesheet" href="fonts/regular/font.css">
@@ -86,28 +84,84 @@
                     to Reverse Diabetes</h2>
             </div>
 
-            <div id="doctor-grid">
-                <div class="grid-item grid-item--height1"><img src="assets/Doctors/Bangalore _Dr_Mala.png" alt=""></div>
-                <div class="grid-item grid-item--height2"><img src="assets/Doctors/Bangalore_Dr_Arun.png" alt=""></div>
-                <div class="grid-item"><img src="assets/Doctors/Bangalore_Dr_Dinesh.png" alt=""></div>
-                <div class="grid-item grid-item--height1"><img src="assets/Doctors/Bangalore_Dr_Karunesh.png" alt=""></div>
-                <div class="grid-item grid-item--height1"><img src="assets/Doctors/Bangalore_Dr_Mohan.png" alt=""></div>
-                <div class="grid-item grid-item--height1"><img src="assets/Doctors/Bangalore_Dr_Paramesh.png" alt=""></div>
-                <div class="grid-item grid-item--height1"><img src="assets/Doctors/Bangalore_Dr_Sanjay.png" alt=""></div>
-                <div class="grid-item"><img src="assets/Doctors/Bangalore_Dr_Sharat.png" alt=""></div>
-                <div class="grid-item grid-item--height2"><img src="assets/Doctors/Bangalore_Dr_Sudhindra.png" alt=""></div>
-                <div class="grid-item grid-item--height2"><img src="assets/Doctors/Bangalore_Dr_Syed.png" alt=""></div>
-                <div class="grid-item grid-item--height2"><img src="assets/Doctors/Chennai_Dr_Abul.png" alt=""></div>
-                <div class="grid-item grid-item--height1"><img src="assets/Doctors/Chennai_Dr_Jayashree.png" alt=""></div>
-                <div class="grid-item grid-item--height1"><img src="assets/Doctors/Chennai_Dr_Kavya.png" alt=""></div>
-                <div class="grid-item grid-item--height1"><img src="assets/Doctors/Chennai_Dr_Zaid.png" alt=""></div>
-                <div class="grid-item"><img src="assets/Doctors/Coimbatore_Dr_Suresh.png" alt=""></div>
-                <div class="grid-item grid-item--height1"><img src="assets/Doctors/Trichy Dr Ravi.png" alt=""></div>
-                <div class="grid-item grid-item--height1"><img src="assets/Doctors/Trichy_Dr_Raj.png" alt=""></div>
-                <div class="grid-item"><img src="assets/Doctors/Tricy_Dr_Sakthi.png" alt=""></div>
+            <div id="doctor-grid-buttons">
+
+                <a class="filter-btn active" data-filter="*" href="#" >All</a>
+
+            </div>
+            <div id="doctors-grid">
+                
             </div>
 
 
+        </section>
+
+        <section id="doctor-info">
+
+            <div class="info-wrapper">
+
+                <div class="name-title">
+                    <h4 id="doctor-name">Dr. Paramesh Shamanna</h4>
+                    <h5 id="doctor-title">MBBS. MD. PGDD.</h5>
+                </div>
+
+                <div class="doctor-block">
+
+                    <div class="doctor-block-icon">
+                        <img src="assets/Icons/medal.svg" alt="">
+                    </div>
+                    <div class="block-text">
+                        <h5>Achievements</h5>
+                        <h4 id="doctor-awards">Governor’s Award</h4>
+                    </div>
+
+                </div>
+
+                <div class="doctor-block">
+                    <div class="doctor-block-icon">
+                        <img src="assets/Icons/location.svg" alt="">
+                    </div>
+                    <div class="block-text">
+                        <h5>Location</h5>
+                        <h4 id="doctor-location">Bangalore Diabetes Center, Bangalore</h4>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </section>
+
+        <section class="patients">
+
+            <div class="patients-title">
+                <h2>Patient’s Say it Best</h2>
+            </div>
+
+            <div class="patients-sub-title">
+                <h5>Amazing experince of 
+                    reversing their diabetes</h5>
+            </div>
+
+            <div id="patients-grid">
+
+
+
+            </div>
+
+
+
+        </section>
+
+        <section id="patient-info">
+
+            <div id="patient-slider">
+
+            </div>
+
+            
+            <p class="foot-note">* results vary</p>
+            
         </section>
 
 
@@ -136,6 +190,8 @@
 
 
         </section>
+
+        
         
 
         <section class="how-we-do">
@@ -323,9 +379,9 @@
 
                 <div class="bottom-block-icons">
 
-                    <img src="assets/Icons/Google.svg" alt="google">
-                    <img src="assets/Icons/Twitter.svg" alt="google">
-                    <img src="assets/Icons/Insta.svg" alt="google">
+                   <a href="#"> <img src="assets/Icons/Google.svg" alt="google"></a>
+                    <a href="#"><img src="assets/Icons/Twitter.svg" alt="google"></a>
+                    <a href="#"><img src="assets/Icons/Insta.svg" alt="google"></a>
 
                 </div>
 
@@ -359,11 +415,14 @@
     <script src="plugins/bootstrap/js/bootstrap.min.js"></script>
     <script src="plugins/sticky/jquery.sticky.js"></script>
     <script src="plugins/isotopejs/isotope.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/bricklayer/0.4.2/bricklayer.min.js"></script>
+    <script src="plugins/slick/slick/slick.min.js"></script>
     
     
 
     <!--Sites main js-->
+    <script src="DOCTORS.js"></script>
+    <script src="PATIENTS.js"></script>
+    <script src="functions.js"></script>
     <script src="index.js"></script>
 </body>
 </html>

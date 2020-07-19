@@ -43,6 +43,7 @@ body {
     
     @include mobile{
         max-width: 100%;
+        
     }
 }
 
@@ -196,6 +197,44 @@ header{
 // Doctors section css
 //========================================================
 
+#doctor-grid-buttons{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding : 10px 40px;
+
+
+    a{
+
+        font-size : 16px;
+        color : #666666;
+        padding : 3px 10px;
+        border : 1px solid #EEEEEE;
+        border-radius : 17px;
+        text-transform: capitalize;
+        margin-right : 10px;
+        margin-bottom: 10px;
+        transition : all 0.5s ease;
+
+        &:last-child{
+            margin-right: 0;
+        }
+
+        &:hover{
+            text-decoration: none;
+            border-color : darken(#EEEEEE, 10%);
+        }
+
+        &.active{
+            border-color : #03A750;
+        }
+
+    }
+
+}
+
 .doctors{
     background-color: $bg-color;
 }
@@ -207,14 +246,14 @@ header{
         font-weight: bold;
         color : #183B56;
         text-align: center;
-        padding : 0 15px;
+        padding : 0 20px;
         line-height: 36px;
         padding-top : 20px;
     }
 }
 
 
-#doctor-grid{
+#doctors-grid{
     transition : all 0.5s ease;
     width : 100%;
     
@@ -227,9 +266,9 @@ header{
         top : 50%;
         left : 50%;
         transform : translate(-50%, -50%);
+        border-radius: 50%;
         transition : all 0.5s ease;
         
-
     }
 }
 
@@ -241,7 +280,18 @@ header{
     // background: #0D8;
     // border: 2px solid #333;
     border-color: hsla(0, 0%, 0%, 0.7);
-    transition : all 0.5s ease;
+    // transition : all 0.5s ease;
+}
+
+.grid-item.active{
+    
+    img{
+        border : 4px solid #02783A;
+        border-radius : 50%;
+        
+        
+    }
+
 }
 
 
@@ -276,6 +326,325 @@ header{
 
 
 
+// Doctor info section style
+//====================================
+
+
+#doctor-info{
+    background-color: $bg-color;
+    padding : 15px 40px 25px 40px; 
+}
+
+.name-title{
+
+    h4{
+        font-family : "HKGrotesk-Bold", sans-serif;
+        font-size : 24px;
+        color : #02783A;
+        margin-bottom : 0;
+    }
+
+    h5{
+
+        text-transform: uppercase;
+        font-size : 16px;
+        font-weight : bold;
+        color : #666666;
+        margin-top : 5px;
+
+    }
+
+}
+
+
+.doctor-block{
+    display : flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top : 30px;
+
+    &:last-child{
+        margin-top : 20px;
+    }
+
+    .doctor-block-icon{
+
+        display: block;
+        
+    }
+
+    .block-text{
+        margin-left : 12px;
+    }
+    h5{
+        color : #666666;
+        font-size : 18px;
+        margin-bottom : 0;
+        line-height: 12px;
+        margin-bottom : 6px;
+    }
+
+    h4{
+        font-family: "HKGrotesk-SemiBold", sans-serif;
+        font-size : 20px;
+        color : #02783A;
+        margin-bottom : 0;
+    }
+}
+
+
+// Patients section style
+//==========================================
+
+.patients{
+    background-color : #E8F5E9;
+    margin-top : 8px;
+    text-align: center;
+    padding : 30px 0;
+}
+
+.patients-title{
+    h2{
+        font-family: "HKGrotesk-Bold", sans-serif;
+        color : #183B56;
+        font-size : 28px;
+        font-weight : bold;
+        margin-bottom : 0;
+    }
+}
+
+.patients-sub-title{
+
+    padding : 0 60px;
+    h5{
+        margin-bottom : 0;
+        font-size: 19px; 
+        color : #5A7184;
+        margin-top : 10px;
+        margin-bottom : 10px;
+        line-height : 28px;
+        
+    }
+}
+
+
+
+#patients-grid{
+    transition : all 0.5s ease;
+    width : 100%;
+    
+    img{
+        width : 45px;
+        // transform : scale(0.5);
+        transition : all 0.5s ease;
+        cursor : pointer;
+        position: absolute;
+        top : 50%;
+        left : 50%;
+        transform : translate(-50%, -50%);
+        border-radius: 50%;
+        transition : all 0.5s ease;
+        
+    }
+}
+
+.slick-dots{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    margin-top : 15px;
+
+    li{
+        width : 10px;
+        height : 10px;
+        border-radius: 50%;
+        border : none;
+        background-color: #B3BAC5;
+        cursor : pointer;
+        margin-left : 10px;
+        transition : all 0.3s ease;
+        &:first-child{
+            margin-left : 0;
+        }
+    }
+
+    .slick-active{
+
+        background-color : #109C66;
+
+
+    }
+    
+}
+
+.slick-slide:focus{
+    outline : none;
+}
+
+// Patient's info section style
+//====================================
+
+#patient-info{
+
+    padding : 30px 40px;
+    text-align: center;
+    background-color: #E8F5E9;
+    position : relative;
+
+    .foot-note{
+        bottom : 65px;
+        right : 40px;
+        color : #999999;
+    }
+
+}
+
+.patient-name{
+    h3{
+        font-family: "HKGrotesk-Bold", sans-serif;
+        margin-bottom : 0;
+        color : #02783A;
+        font-weight : bold;
+        font-size : 28px;
+    }
+}
+
+.basic-info{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    margin-top : 20px;
+    margin-bottom : 20px;
+}
+
+
+.basic-content{
+    text-align : left;
+    margin-left : 17px;
+
+    h5{
+        font-weight : bold;
+        color : #444444;
+        margin-bottom : 0;
+        font-size: 18px;
+        text-transform: uppercase;
+        margin-bottom : 5px;
+
+    }
+
+    h4{
+        margin-bottom : 0;
+        color : #388E3C;
+        font-weight : bold;
+        font-size : 22px;
+    }
+}
+
+.patient-comment{
+    margin-top : 15px;
+        margin-bottom : 35px;
+
+    p{
+        font-family : "HKGrotesk-SemiBold", sans-serif;
+        font-size: 22px;
+        color : #444444;
+        
+    }
+
+}
+
+.patient-desease-card{
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color : white;
+    border: 1px solid #DDDDDD;
+    border-radius: 16px;
+    padding-bottom : 8px;
+    margin-bottom : 18px;
+
+    .desease-name{
+        h5{
+            font-family : "HKGrotesk-SemiBold", sans-serif;
+            color : #444444;
+            font-size : 22px;
+            margin-bottom : 0;
+            margin-top : 10px;
+            margin-bottom: 8px;
+        }
+    }
+
+    .points-arrow{
+        padding : 10px;
+        
+    }
+
+
+    .points-wrap{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width : 100%;
+        padding : 0 8px;
+        
+
+    }
+
+    .points-before{
+        background: linear-gradient(180deg, #EAA3A3 0%, #FF3131 100%);
+    }
+
+    .points-after{
+
+        background: linear-gradient(180deg, #7FE4B3 0%, #03A750 100%);
+
+    }
+
+    
+
+    .points{
+        color : white;
+        width : 50%;
+        border-radius: 12px;
+        padding : 10px 0;
+        
+        
+        h4{
+            font-family : "HKGrotesk-SemiBold", sans-serif;
+            margin-bottom : 0;
+            font-size: 32px;
+
+        }
+
+        h6{
+            font-size : 12px;
+            margin-top : 3px;
+            margin-bottom : 0;
+        }
+    }
+
+}
+
+.card-large {
+
+    .points{
+        min-height: 100px;
+    }
+}
+
+#fix-height{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom : 15px;
+}
+
+
 // Investor section style
 //=====================================
 
@@ -284,7 +653,10 @@ header{
     margin-top : 8px;
     width : 100%;
     padding-bottom : 25px;
+    
 }
+
+
 
 .investor-title{
     h4{
@@ -715,7 +1087,7 @@ header{
     }
 
     .bottom-block-icons{
-        img{
+        a{
             margin-left : 15px;
 
             &:first-child{
@@ -758,6 +1130,7 @@ header{
 
         text-transform: uppercase;
         color : #36B37E;
+        font-weight: bold;
 
     }
 

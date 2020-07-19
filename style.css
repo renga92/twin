@@ -213,6 +213,47 @@ header {
           transform: translate(-30px, 10px);
 }
 
+#doctor-grid-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 10px 40px;
+}
+
+#doctor-grid-buttons a {
+  font-size: 16px;
+  color: #666666;
+  padding: 3px 10px;
+  border: 1px solid #EEEEEE;
+  border-radius: 17px;
+  text-transform: capitalize;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#doctor-grid-buttons a:last-child {
+  margin-right: 0;
+}
+
+#doctor-grid-buttons a:hover {
+  text-decoration: none;
+  border-color: #d5d5d5;
+}
+
+#doctor-grid-buttons a.active {
+  border-color: #03A750;
+}
+
 .doctors {
   background-color: #FFFFFF;
 }
@@ -223,18 +264,18 @@ header {
   font-weight: bold;
   color: #183B56;
   text-align: center;
-  padding: 0 15px;
+  padding: 0 20px;
   line-height: 36px;
   padding-top: 20px;
 }
 
-#doctor-grid {
+#doctors-grid {
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   width: 100%;
 }
 
-#doctor-grid img {
+#doctors-grid img {
   width: 45px;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
@@ -244,6 +285,7 @@ header {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  border-radius: 50%;
   transition: all 0.5s ease;
 }
 
@@ -253,13 +295,331 @@ header {
   height: 80px;
   width: 25%;
   border-color: rgba(0, 0, 0, 0.7);
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+}
+
+.grid-item.active img {
+  border: 4px solid #02783A;
+  border-radius: 50%;
 }
 
 .scale-up {
   -webkit-transform: scale(1.5);
           transform: scale(1.5);
+}
+
+#doctor-info {
+  background-color: #FFFFFF;
+  padding: 15px 40px 25px 40px;
+}
+
+.name-title h4 {
+  font-family: "HKGrotesk-Bold", sans-serif;
+  font-size: 24px;
+  color: #02783A;
+  margin-bottom: 0;
+}
+
+.name-title h5 {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  color: #666666;
+  margin-top: 5px;
+}
+
+.doctor-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-top: 30px;
+}
+
+.doctor-block:last-child {
+  margin-top: 20px;
+}
+
+.doctor-block .doctor-block-icon {
+  display: block;
+}
+
+.doctor-block .block-text {
+  margin-left: 12px;
+}
+
+.doctor-block h5 {
+  color: #666666;
+  font-size: 18px;
+  margin-bottom: 0;
+  line-height: 12px;
+  margin-bottom: 6px;
+}
+
+.doctor-block h4 {
+  font-family: "HKGrotesk-SemiBold", sans-serif;
+  font-size: 20px;
+  color: #02783A;
+  margin-bottom: 0;
+}
+
+.patients {
+  background-color: #E8F5E9;
+  margin-top: 8px;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.patients-title h2 {
+  font-family: "HKGrotesk-Bold", sans-serif;
+  color: #183B56;
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.patients-sub-title {
+  padding: 0 60px;
+}
+
+.patients-sub-title h5 {
+  margin-bottom: 0;
+  font-size: 19px;
+  color: #5A7184;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  line-height: 28px;
+}
+
+#patients-grid {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  width: 100%;
+}
+
+#patients-grid img {
+  width: 45px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 50%;
+  transition: all 0.5s ease;
+}
+
+.slick-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style-type: none;
+  margin-top: 15px;
+}
+
+.slick-dots li {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: none;
+  background-color: #B3BAC5;
+  cursor: pointer;
+  margin-left: 10px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.slick-dots li:first-child {
+  margin-left: 0;
+}
+
+.slick-dots .slick-active {
+  background-color: #109C66;
+}
+
+.slick-slide:focus {
+  outline: none;
+}
+
+#patient-info {
+  padding: 30px 40px;
+  text-align: center;
+  background-color: #E8F5E9;
+  position: relative;
+}
+
+#patient-info .foot-note {
+  bottom: 65px;
+  right: 40px;
+  color: #999999;
+}
+
+.patient-name h3 {
+  font-family: "HKGrotesk-Bold", sans-serif;
+  margin-bottom: 0;
+  color: #02783A;
+  font-weight: bold;
+  font-size: 28px;
+}
+
+.basic-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.basic-content {
+  text-align: left;
+  margin-left: 17px;
+}
+
+.basic-content h5 {
+  font-weight: bold;
+  color: #444444;
+  margin-bottom: 0;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.basic-content h4 {
+  margin-bottom: 0;
+  color: #388E3C;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.patient-comment {
+  margin-top: 15px;
+  margin-bottom: 35px;
+}
+
+.patient-comment p {
+  font-family: "HKGrotesk-SemiBold", sans-serif;
+  font-size: 22px;
+  color: #444444;
+}
+
+.patient-desease-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  border: 1px solid #DDDDDD;
+  border-radius: 16px;
+  padding-bottom: 8px;
+  margin-bottom: 18px;
+}
+
+.patient-desease-card .desease-name h5 {
+  font-family: "HKGrotesk-SemiBold", sans-serif;
+  color: #444444;
+  font-size: 22px;
+  margin-bottom: 0;
+  margin-top: 10px;
+  margin-bottom: 8px;
+}
+
+.patient-desease-card .points-arrow {
+  padding: 10px;
+}
+
+.patient-desease-card .points-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  padding: 0 8px;
+}
+
+.patient-desease-card .points-before {
+  background: -webkit-gradient(linear, left top, left bottom, from(#EAA3A3), to(#FF3131));
+  background: linear-gradient(180deg, #EAA3A3 0%, #FF3131 100%);
+}
+
+.patient-desease-card .points-after {
+  background: -webkit-gradient(linear, left top, left bottom, from(#7FE4B3), to(#03A750));
+  background: linear-gradient(180deg, #7FE4B3 0%, #03A750 100%);
+}
+
+.patient-desease-card .points {
+  color: white;
+  width: 50%;
+  border-radius: 12px;
+  padding: 10px 0;
+}
+
+.patient-desease-card .points h4 {
+  font-family: "HKGrotesk-SemiBold", sans-serif;
+  margin-bottom: 0;
+  font-size: 32px;
+}
+
+.patient-desease-card .points h6 {
+  font-size: 12px;
+  margin-top: 3px;
+  margin-bottom: 0;
+}
+
+.card-large .points {
+  min-height: 100px;
+}
+
+#fix-height {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-bottom: 15px;
 }
 
 .investor {
@@ -630,11 +990,11 @@ header {
   margin-top: 5px;
 }
 
-.bottom-block .bottom-block-icons img {
+.bottom-block .bottom-block-icons a {
   margin-left: 15px;
 }
 
-.bottom-block .bottom-block-icons img:first-child {
+.bottom-block .bottom-block-icons a:first-child {
   margin-left: 0;
 }
 
@@ -673,5 +1033,6 @@ header {
 .bottom-block-card h6 {
   text-transform: uppercase;
   color: #36B37E;
+  font-weight: bold;
 }
 /*# sourceMappingURL=style.css.map */
