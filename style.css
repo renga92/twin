@@ -225,7 +225,7 @@ header {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 10px 40px;
+  padding: 10px 15px;
 }
 
 #doctor-grid-buttons a {
