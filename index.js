@@ -21,11 +21,7 @@ $(function(){
     
     
 
-    $(".grid-item img").on('click', function(){
-      $(".grid-item img").removeClass('scale-up');
-      $(this).addClass('scale-up');
-      
-    })
+    
     
   
 

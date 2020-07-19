@@ -258,37 +258,48 @@ header{
     width : 100%;
     
     img{
-        width : 45px;
-        // transform : scale(0.5);
+        width : 65px;  
         transition : all 0.5s ease;
         cursor : pointer;
-        position: absolute;
-        top : 50%;
-        left : 50%;
-        transform : translate(-50%, -50%);
+        
+        transition : width 0.3s ease-out;
+        border : 3px solid white;
         border-radius: 50%;
-        transition : all 0.5s ease;
+        
         
     }
 
     .grid-item {
         position : relative;
         float: left;
+        display : flex;
+        justify-content: center;
+        align-items: center;
         height : 80px;
         width : 25%;
-        // background: #0D8;
-        // border: 2px solid #333;
+        
         border-color: hsla(0, 0%, 0%, 0.7);
-        // transition : all 0.5s ease;
     }
     
     .grid-item.active{
         
         img{
-            border : 4px solid #02783A;
+            
+            width : 85px !important;
+            
+        }
+
+        .image-bg{
+            width : fit-content ;
+            height : fit-content;
+            padding : 3px;
+            background: linear-gradient(to right, #00A651 0%, #B2D433 100%);
+            position : absolute;
+            top : 50%;
+            left : 50%;
+            transform: translate(-50%, -50%);
             border-radius : 50%;
-            
-            
+        
         }
     
     }
@@ -296,69 +307,28 @@ header{
 
 #doctors-grid{
 
-    .grid-item:nth-child(3n + 0){
+    .grid-item:nth-child(even){
         height : 100px;
 
         img{
-
-            transform : translate(-70%, -50%);
-
+            width : 75px;
         }
+        
     }
 
-    .grid-item:nth-child(3n + 3){
-        height : 140px;
-
+    .grid-item:nth-child(2n + 1){
+        height : 110px;
         img{
-
-            transform : translate(-30%, -50%);
-
-        }
-    }
-
-    .grid-item:nth-child(2n + 0){
-        height : 90px;
-
-        img{
-
-            transform : translate(-70%, -50%);
-
+            width : 70px
         }
     }
 
     .grid-item:nth-child(5n + 0){
-        height : 90px;
+        height : 85px;
     }
 
 }
 
-
-
-
-// .grid-item--height1{
-//     height : 110px;
-//     img{
-//         width : 65px !important;
-        
-//     }
-// }
-
-  
-// .grid-item--height2{
-//     height : 160px;
-
-//     img{
-//         width : 70px !important;
-//         transform : translate(-30%, -50%) !important;
-//     }
-// }
-
-// .grid-item--width2{
-//     width : 50%;
-//     img{
-//         transform : translate(20%, -50%) !important;
-//     }
-// }
 
 
 
@@ -472,56 +442,49 @@ header{
     width : 100%;
     
     img{
-        width : 45px;
-        // transform : scale(0.5);
+        width : 65px;  
         transition : all 0.5s ease;
         cursor : pointer;
-        position: absolute;
-        top : 50%;
-        left : 50%;
-        transform : translate(-50%, -50%);
-        border-radius: 50%;
-        transition : all 0.5s ease;
         
-    }
-}
-
-#patients-grid{
-    transition : all 0.5s ease;
-    width : 100%;
-    
-    img{
-        width : 45px;
-        // transform : scale(0.5);
-        transition : all 0.5s ease;
-        cursor : pointer;
-        position: absolute;
-        top : 50%;
-        left : 50%;
-        transform : translate(-50%, -50%);
+        transition : width 0.3s ease-out;
+        border : 3px solid #E8F5E9;
         border-radius: 50%;
-        transition : all 0.5s ease;
+        
         
     }
 
     .grid-item {
         position : relative;
         float: left;
+        display : flex;
+        justify-content: center;
+        align-items: center;
         height : 80px;
         width : 25%;
-        // background: #0D8;
-        // border: 2px solid #333;
+        
         border-color: hsla(0, 0%, 0%, 0.7);
-        // transition : all 0.5s ease;
     }
     
     .grid-item.active{
         
         img{
-            border : 4px solid #02783A;
+            
+            width : 85px !important;
+            border-color : white;
+            
+        }
+
+        .image-bg{
+            width : fit-content ;
+            height : fit-content;
+            padding : 3px;
+            background: linear-gradient(to right, #00A651 0%, #B2D433 100%);
+            position : absolute;
+            top : 50%;
+            left : 50%;
+            transform: translate(-50%, -50%);
             border-radius : 50%;
-            
-            
+        
         }
     
     }
@@ -529,42 +492,27 @@ header{
 
 #patients-grid{
 
-    .grid-item:nth-child(3n + 0){
+    .grid-item:nth-child(even){
         height : 100px;
 
         img{
-
-            transform : translate(-70%, -50%);
-
+            width : 75px;
         }
+        
     }
 
-    .grid-item:nth-child(3n + 3){
-        height : 140px;
-
+    .grid-item:nth-child(2n + 1){
+        height : 110px;
         img{
-
-            transform : translate(-30%, -50%);
-
-        }
-    }
-
-    .grid-item:nth-child(2n + 0){
-        height : 90px;
-
-        img{
-
-            transform : translate(-70%, -50%);
-
+            width : 70px
         }
     }
 
     .grid-item:nth-child(5n + 0){
-        height : 90px;
+        height : 85px;
     }
 
 }
-
 
 .slick-dots{
     display: flex;

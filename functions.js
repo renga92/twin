@@ -46,7 +46,7 @@ function dynamicDoctorImages(){
     // Adding images to the with a wrapper
     // and necessary data for isotope filter
     doctors.map((m, i) => {
-        let gridItem = `<div class='grid-item ${m.shortLocation} ${ i == 10 ? "active" : ""}' ><img data-id="${m.id}" src="${m.imagePath}"/></div>`;
+        let gridItem = `<div class='grid-item ${m.shortLocation} ${ i == 10 ? "active" : ""}' ><div class="image-bg"><img data-id="${m.id}" src="${m.imagePath}"/></div></div>`;
         $('#doctors-grid').append(gridItem);
     })
 }
@@ -93,7 +93,7 @@ function doctorInfoChange(){
     $('#doctors-grid .grid-item img').on('click', function(){
 
         $('#doctors-grid .grid-item').removeClass('active');
-        $(this).parent('.grid-item').addClass('active');
+        $(this).parents('.grid-item').addClass('active');
 
         let doctors = DOCTORS;
         let doctorId = $(this).data().id;
@@ -235,7 +235,7 @@ function dynamicPatientsImages(){
     // Adding images to the with a wrapper
     // and necessary data for isotope filter
     patient.map((m, i) => {
-        let gridItem = `<div  class='grid-item ${ i == 4 ? "active" : ""}' ><img data-id="${i}" src="${m.imagePath}"/></div>`;
+        let gridItem = `<div  class='grid-item ${ i == 0 ? "active" : ""}' ><div class="image-bg"><img data-id="${i}" src="${m.imagePath}"/></div></div>`;
         $('#patients-grid').append(gridItem);
     })
 }
@@ -255,6 +255,16 @@ function patientsIsotope(){
 
 function patientInfoSlick(){
 
+
+    $('#patient-slider').on('afterChange', function(e, s, d){
+
+        $('#patients-grid .grid-item').removeClass('active');
+        let currentSlide = $('#patients-grid .grid-item')[s.currentSlide];
+
+        $(currentSlide).addClass('active');
+
+    })
+
     $('#patient-slider').slick({
         autoplay : true,
         autoplaySpeed : 4000,
@@ -266,6 +276,10 @@ function patientInfoSlick(){
     $('.slick-dots').find('button').remove();
 
     $('#patients-grid img').on('click', function(){
+
+        $('#patients-grid .grid-item').removeClass('active');
+        $(this).parents('.grid-item').addClass('active');
+
         let slide = $(this).data().id;
         $('#patient-slider').slick('slickGoTo', slide);
     })
