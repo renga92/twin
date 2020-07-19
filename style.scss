@@ -401,6 +401,7 @@ header{
     margin-top : 8px;
     text-align: center;
     padding : 30px 0;
+    padding-bottom : 0;
 }
 
 .patients-title{
@@ -512,7 +513,7 @@ header{
 
 .basic-info{
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     flex-direction: row;
     margin-top : 20px;
