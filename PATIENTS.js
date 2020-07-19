@@ -7,7 +7,7 @@ let PATIENTS_INFO =
 
         "id"                        : "P1",
         "imagePath"                 : "assets/Patients/anuradha.png",
-        "name"                      : "Meera, Dancer",
+        "name"                      : "Anuradha",
         "year_of_desease"           : "12",
         "reversed_days"             : "70",
         "disease_type"              : "Sugar A1C",
@@ -44,8 +44,8 @@ let PATIENTS_INFO =
     {
 
         "id"                        : "P3",
-        "imagePath"                 : "assets/Patients/gnanakumar.png",
-        "name"                      : "Gnanakumar",
+        "imagePath"                 : "assets/Patients/kailasam.png",
+        "name"                      : "Kailasam",
         "year_of_desease"           : "8",
         "reversed_days"             : "68",
         "disease_type"              : "Blood Presure",
@@ -63,8 +63,8 @@ let PATIENTS_INFO =
     {
 
         "id"                        : "P4",
-        "imagePath"                 : "assets/Patients/gnanakumar.png",
-        "name"                      : "Gnanakumar",
+        "imagePath"                 : "assets/Patients/manzoor.png",
+        "name"                      : "Manzoor",
         "year_of_desease"           : "8",
         "reversed_days"             : "68",
         "disease_type"              : "Blood Presure",
@@ -82,8 +82,8 @@ let PATIENTS_INFO =
     {
 
         "id"                        : "P5",
-        "imagePath"                 : "assets/Patients/gnanakumar.png",
-        "name"                      : "Gnanakumar",
+        "imagePath"                 : "assets/Patients/meera.png",
+        "name"                      : "Meera",
         "year_of_desease"           : "8",
         "reversed_days"             : "68",
         "disease_type"              : "Blood Presure",
@@ -101,8 +101,8 @@ let PATIENTS_INFO =
     {
 
         "id"                        : "P6",
-        "imagePath"                 : "assets/Patients/gnanakumar.png",
-        "name"                      : "Gnanakumar",
+        "imagePath"                 : "assets/Patients/ramanujam.png",
+        "name"                      : "Ramanujam",
         "year_of_desease"           : "8",
         "reversed_days"             : "68",
         "disease_type"              : "Blood Presure",
@@ -120,8 +120,8 @@ let PATIENTS_INFO =
     {
 
         "id"                        : "P7",
-        "imagePath"                 : "assets/Patients/gnanakumar.png",
-        "name"                      : "Gnanakumar",
+        "imagePath"                 : "assets/Patients/sambath.png",
+        "name"                      : "Sambath",
         "year_of_desease"           : "8",
         "reversed_days"             : "68",
         "disease_type"              : "Blood Presure",
@@ -139,8 +139,8 @@ let PATIENTS_INFO =
     {
 
         "id"                        : "P8",
-        "imagePath"                 : "assets/Patients/gnanakumar.png",
-        "name"                      : "Gnanakumar",
+        "imagePath"                 : "assets/Patients/saraswathi.png",
+        "name"                      : "Saraswathi",
         "year_of_desease"           : "8",
         "reversed_days"             : "68",
         "disease_type"              : "Blood Presure",
@@ -158,8 +158,8 @@ let PATIENTS_INFO =
     {
 
         "id"                        : "P9",
-        "imagePath"                 : "assets/Patients/gnanakumar.png",
-        "name"                      : "Gnanakumar",
+        "imagePath"                 : "assets/Patients/sharmila.png",
+        "name"                      : "Sharmila",
         "year_of_desease"           : "8",
         "reversed_days"             : "68",
         "disease_type"              : "Blood Presure",
@@ -177,8 +177,8 @@ let PATIENTS_INFO =
     {
 
         "id"                        : "P10",
-        "imagePath"                 : "assets/Patients/gnanakumar.png",
-        "name"                      : "Gnanakumar",
+        "imagePath"                 : "assets/Patients/sreenivasan.png",
+        "name"                      : "Sreenivasan",
         "year_of_desease"           : "8",
         "reversed_days"             : "68",
         "disease_type"              : "Blood Presure",
@@ -196,8 +196,8 @@ let PATIENTS_INFO =
     {
 
         "id"                        : "P11",
-        "imagePath"                 : "assets/Patients/gnanakumar.png",
-        "name"                      : "Gnanakumar",
+        "imagePath"                 : "assets/Patients/yusuf.png",
+        "name"                      : "Yusuf",
         "year_of_desease"           : "8",
         "reversed_days"             : "68",
         "disease_type"              : "Blood Presure",
