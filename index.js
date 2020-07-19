@@ -18,8 +18,6 @@ $(function(){
     });
 
     
-    console.log('updated from mahmuds repository')
-    
     
 
     
