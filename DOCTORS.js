@@ -118,7 +118,7 @@ let DOCTORS_INFO =
         "name" : "Dr. Jayashree",
         "title" : "MBBS. MD. PGDD.",
         "achievements" : "Governor’s Award",
-        "shortLocation" : "coimbatore",
+        "shortLocation" : "chennai",
         "location" : "coimbatore Diabetes Center, Bangalore",
         "imagePath" : "assets/Doctors/Chennai_Dr_Jayashree.png"
     },
