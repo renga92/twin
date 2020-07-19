@@ -270,29 +270,69 @@ header{
         transition : all 0.5s ease;
         
     }
-}
 
-.grid-item {
-    position : relative;
-    float: left;
-    height : 80px;
-    width : 25%;
-    // background: #0D8;
-    // border: 2px solid #333;
-    border-color: hsla(0, 0%, 0%, 0.7);
-    // transition : all 0.5s ease;
-}
-
-.grid-item.active{
+    .grid-item {
+        position : relative;
+        float: left;
+        height : 80px;
+        width : 25%;
+        // background: #0D8;
+        // border: 2px solid #333;
+        border-color: hsla(0, 0%, 0%, 0.7);
+        // transition : all 0.5s ease;
+    }
     
-    img{
-        border : 4px solid #02783A;
-        border-radius : 50%;
+    .grid-item.active{
         
-        
+        img{
+            border : 4px solid #02783A;
+            border-radius : 50%;
+            
+            
+        }
+    
+    }
+}
+
+#doctors-grid{
+
+    .grid-item:nth-child(3n + 0){
+        height : 100px;
+
+        img{
+
+            transform : translate(-70%, -50%);
+
+        }
+    }
+
+    .grid-item:nth-child(3n + 3){
+        height : 140px;
+
+        img{
+
+            transform : translate(-30%, -50%);
+
+        }
+    }
+
+    .grid-item:nth-child(2n + 0){
+        height : 90px;
+
+        img{
+
+            transform : translate(-70%, -50%);
+
+        }
+    }
+
+    .grid-item:nth-child(5n + 0){
+        height : 90px;
     }
 
 }
+
+
 
 
 // .grid-item--height1{
@@ -320,9 +360,6 @@ header{
 //     }
 // }
 
-.scale-up{
-    transform : scale(1.5);
-}
 
 
 
@@ -448,6 +485,86 @@ header{
         
     }
 }
+
+#patients-grid{
+    transition : all 0.5s ease;
+    width : 100%;
+    
+    img{
+        width : 45px;
+        // transform : scale(0.5);
+        transition : all 0.5s ease;
+        cursor : pointer;
+        position: absolute;
+        top : 50%;
+        left : 50%;
+        transform : translate(-50%, -50%);
+        border-radius: 50%;
+        transition : all 0.5s ease;
+        
+    }
+
+    .grid-item {
+        position : relative;
+        float: left;
+        height : 80px;
+        width : 25%;
+        // background: #0D8;
+        // border: 2px solid #333;
+        border-color: hsla(0, 0%, 0%, 0.7);
+        // transition : all 0.5s ease;
+    }
+    
+    .grid-item.active{
+        
+        img{
+            border : 4px solid #02783A;
+            border-radius : 50%;
+            
+            
+        }
+    
+    }
+}
+
+#patients-grid{
+
+    .grid-item:nth-child(3n + 0){
+        height : 100px;
+
+        img{
+
+            transform : translate(-70%, -50%);
+
+        }
+    }
+
+    .grid-item:nth-child(3n + 3){
+        height : 140px;
+
+        img{
+
+            transform : translate(-30%, -50%);
+
+        }
+    }
+
+    .grid-item:nth-child(2n + 0){
+        height : 90px;
+
+        img{
+
+            transform : translate(-70%, -50%);
+
+        }
+    }
+
+    .grid-item:nth-child(5n + 0){
+        height : 90px;
+    }
+
+}
+
 
 .slick-dots{
     display: flex;
