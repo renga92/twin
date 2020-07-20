@@ -34,8 +34,8 @@ function dynamicDoctorImages() {
   // Adding images to the with a wrapper
   // and necessary data for isotope filter
   doctors.map((m, i) => {
-    let gridItem = `<div class='grid-item ${m.shortLocation} ${
-      i == 10 ? "active" : ""
+    let gridItem = `<div class='grid-item ${m.shortLocation.toLowerCase()} ${
+      i == 4 ? "active" : ""
     }' ><div class="image-bg"><img data-id="${m.id}" src="${
       m.imagePath
     }"/></div></div>`;
@@ -103,9 +103,11 @@ function changeDoctorSelection() {
     let location = $(this).data().filter;
     let firstId;
     if (location == "*") {
-      firstId = "D11";
+      firstId = "D5";
     } else {
-      firstId = doctors.filter((m) => m.shortLocation === location)[0].id;
+      firstId = doctors.filter(
+        (m) => m.shortLocation.toLowerCase() === location
+      )[0].id;
     }
     $(`#doctors-grid img[data-id=${firstId}]`).click();
   });
