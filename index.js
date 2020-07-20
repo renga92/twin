@@ -14,6 +14,4 @@ $(function () {
     topSpacing: 0,
     zIndex: 1,
   });
-
-  console.log("Updated from Mahmud");
 });
