@@ -1,393 +1,301 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Twin</title>
 
-
     <!--static plugins integration-->
-    <link rel="stylesheet" href="plugins/fontawesome/css/all.min.css">
-    <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="plugins/slick/slick/slick.css">
+    <link rel="stylesheet" href="plugins/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="plugins/slick/slick/slick.css" />
 
     <!--Embeding local fonts-->
-    <link rel="stylesheet" href="fonts/regular/font.css">
-    <link rel="stylesheet" href="fonts/light/font.css">
-    <link rel="stylesheet" href="fonts/semi-bold/font.css">
-    <link rel="stylesheet" href="fonts/bold/font.css">
-    <link rel="stylesheet" href="fonts/extra-bold/font.css">
+    <link rel="stylesheet" href="fonts/regular/font.css" />
+    <link rel="stylesheet" href="fonts/light/font.css" />
+    <link rel="stylesheet" href="fonts/semi-bold/font.css" />
+    <link rel="stylesheet" href="fonts/bold/font.css" />
+    <link rel="stylesheet" href="fonts/extra-bold/font.css" />
 
     <!--sites main style file-->
-    <link rel="stylesheet" href="style.css?v=1.1.1">
-</head>
-<body>
-
-
+    <link rel="stylesheet" href="style.css?v=1.1.1" />
+  </head>
+  <body>
     <header id="sticky-header">
-        <div class="logo-wrap">
-            <img src="assets/StickyHeader/Twin Header Logo.svg" alt="">
-        </div>
+      <div class="logo-wrap">
+        <img src="assets/StickyHeader/Twin Header Logo.svg" alt="" />
+      </div>
 
-        <div class="header-btn-wrap">
-        <a href="#pricing" class="header-btn"><img src="assets/StickyHeader/VideoConsult.svg" alt="video consult"><span>Consult Now</span></a>
-        </div>
-
+      <div class="header-btn-wrap">
+        <a href="#pricing" class="header-btn"
+          ><img
+            src="assets/StickyHeader/VideoConsult.svg"
+            alt="video consult"
+          /><span>Consult Now</span></a
+        >
+      </div>
     </header>
 
     <div id="site-wrapper">
+      <section class="banner">
+        <div class="bnr-header">
+          <h2>Reverse Diabetes</h2>
+        </div>
 
-
-        
-
-        <section class="banner">
-
-            <div class="bnr-header">
-                <h2>Reverse Diabetes </h2>
+        <div class="bnr-content">
+          <div class="bnr-col">
+            <div class="bnr-sub">
+              <div class="bnr-icn">
+                <img src="assets/Icons/herocheck.svg" alt="" />
+              </div>
+              <div class="bnr-sub-text">
+                <h4>Normalise Sugar</h4>
+              </div>
             </div>
 
-            <div class="bnr-content">
-
-                <div class="bnr-col">
-
-                    <div class="bnr-sub">
-                        <div class="bnr-icn"><img src="assets/Icons/herocheck.svg" alt=""></div>
-                        <div class="bnr-sub-text">
-                            <h4>Normalise Sugar</h4>
-                        </div>
-                    </div>
-
-                    <div class="bnr-sub">
-                        <div class="bnr-icn"><img src="assets/Icons/herocheck.svg" alt=""></div>
-                        <div class="bnr-sub-text">
-                            <h4>Stop Medicines</h4>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="bnr-col bnr-img-wrap">
-                    <div class="bnr-hero-img">
-                        <img src="assets/Hero.gif" alt="hero">
-                    </div>
-                </div>
-
+            <div class="bnr-sub">
+              <div class="bnr-icn">
+                <img src="assets/Icons/herocheck.svg" alt="" />
+              </div>
+              <div class="bnr-sub-text">
+                <h4>Stop Medicines</h4>
+              </div>
             </div>
-            
-            <p class="foot-note">* results vary</p>
-        </section>
-
-        <section class="doctors">
-
-            <div class="doctors-title">
-                <h2> Top Doctors using 
-                    Digital Twin Technology 
-                    to Reverse Diabetes</h2>
+          </div>
+          <div class="bnr-col bnr-img-wrap">
+            <div class="bnr-hero-img">
+              <img src="assets/Hero.gif" alt="hero" />
             </div>
+          </div>
+        </div>
 
-            <div id="doctor-grid-buttons">
+        <p class="foot-note">* results vary</p>
+      </section>
 
-                <a class="filter-btn active" data-filter="*" href="#" >All</a>
+      <section class="doctors">
+        <div class="doctors-title">
+          <h2>Top Doctors using Digital Twin Technology to Reverse Diabetes</h2>
+        </div>
 
+        <div id="doctor-grid-buttons">
+          <a class="filter-btn active" data-filter="*" href="#">All</a>
+        </div>
+        <div id="doctors-grid"></div>
+      </section>
+
+      <section id="doctor-info">
+        <div class="info-wrapper">
+          <div class="name-title">
+            <h4 id="doctor-name">Dr. Paramesh Shamanna</h4>
+            <h5 id="doctor-title">MBBS. MD. PGDD.</h5>
+          </div>
+
+          <div class="doctor-block">
+            <div class="doctor-block-icon">
+              <img src="assets/Icons/medal.svg" alt="" />
             </div>
-            <div id="doctors-grid">
-                
+            <div class="block-text">
+              <h5>Achievements</h5>
+              <h4 id="doctor-awards">Governor’s Award</h4>
             </div>
+          </div>
 
-
-        </section>
-
-        <section id="doctor-info">
-
-            <div class="info-wrapper">
-
-                <div class="name-title">
-                    <h4 id="doctor-name">Dr. Paramesh Shamanna</h4>
-                    <h5 id="doctor-title">MBBS. MD. PGDD.</h5>
-                </div>
-
-                <div class="doctor-block">
-
-                    <div class="doctor-block-icon">
-                        <img src="assets/Icons/medal.svg" alt="">
-                    </div>
-                    <div class="block-text">
-                        <h5>Achievements</h5>
-                        <h4 id="doctor-awards">Governor’s Award</h4>
-                    </div>
-
-                </div>
-
-                <div class="doctor-block">
-                    <div class="doctor-block-icon">
-                        <img src="assets/Icons/location.svg" alt="">
-                    </div>
-                    <div class="block-text">
-                        <h5>Location</h5>
-                        <h4 id="doctor-location">Bangalore Diabetes Center, Bangalore</h4>
-                    </div>
-                </div>
-
-
+          <div class="doctor-block">
+            <div class="doctor-block-icon">
+              <img src="assets/Icons/location.svg" alt="" />
             </div>
-
-        </section>
-
-        <section class="patients">
-
-            <div class="patients-title">
-                <h2>Patient’s Say it Best</h2>
+            <div class="block-text">
+              <h5>Location</h5>
+              <h4 id="doctor-location">Bangalore Diabetes Center, Bangalore</h4>
             </div>
+          </div>
+        </div>
+      </section>
 
-            <div class="patients-sub-title">
-                <h5>Amazing experince of 
-                    reversing their diabetes</h5>
+      <section class="patients">
+        <div class="patients-title">
+          <h2>Patient’s Say it Best</h2>
+        </div>
+
+        <div class="patients-sub-title">
+          <h5>Amazing experince of reversing their diabetes</h5>
+        </div>
+
+        <div id="patients-grid"></div>
+      </section>
+
+      <section id="patient-info">
+        <div id="patient-slider"></div>
+
+        <p class="foot-note">* results vary</p>
+      </section>
+
+      <section class="investor">
+        <div class="investor-title">
+          <h4>Backed by Leading Investor</h4>
+        </div>
+
+        <div class="investor-logo">
+          <img src="assets/investor/Sequoia.png" alt="sequoia" />
+        </div>
+
+        <div class="investor-sub-title">
+          <p>who previously invested in</p>
+        </div>
+
+        <div class="investor-companies">
+          <img src="assets/investor/apple.svg" alt="apple" />
+          <img src="assets/investor/google.svg" alt="google" />
+          <img src="assets/investor/ola.svg" alt="ola" />
+          <img src="assets/investor/Group.svg" alt="zomato" />
+        </div>
+      </section>
+
+      <section class="how-we-do">
+        <div class="hwd-top-title">
+          <h4>HOW WE DO IT</h4>
+        </div>
+
+        <div class="hwd-title">
+          <h1>Doctors use Digital Twin Technology to Reverse Diabetes</h1>
+        </div>
+
+        <div class="hwd-sub-title">
+          <h3>Too good to be true?</h3>
+        </div>
+
+        <div class="hwd-btn-wrap">
+          <button class="hwd-btn">
+            <img src="assets/Icons/watch video.svg" alt="" /><span
+              >WATCH TO LEARN MORE</span
+            >
+          </button>
+        </div>
+      </section>
+
+      <section id="pricing">
+        <div class="pricing-title">
+          <h3>Pricing plan</h3>
+        </div>
+
+        <div class="pricing-sub-title">
+          <h5>
+            GOOD HEALTH without Medcines is Priceless
+          </h5>
+        </div>
+
+        <div class="pricing-para">
+          <p>
+            Average Diabetic spends Rs. 15 lakh on medicines in their lifetime
+          </p>
+        </div>
+
+        <div class="pricing-content">
+          <div class="pricing-cnt-title">
+            <h3>What is included in our Diabetes Reversal Program</h3>
+          </div>
+
+          <div class="pricing-service">
+            <div class="pricing-top-service">
+              <img src="assets/Doctor.svg" alt="" />
             </div>
-
-            <div id="patients-grid">
-
-
-
+            <div class="pricing-grid-services">
+              <img src="assets/sensor.svg" alt="sensors" />
+              <img src="assets/coach.svg" alt="coach" />
+              <img src="assets/labtest.svg" alt="labtest" />
+              <img src="assets/medicines.svg" alt="medicines" />
+              <img src="assets/247.svg" alt="24/7" />
+              <img src="assets/mobile.svg" alt="mobile" />
             </div>
-
-
-
-        </section>
-
-        <section id="patient-info">
-
-            <div id="patient-slider">
-
-            </div>
-
-            
-            <p class="foot-note">* results vary</p>
-            
-        </section>
-
-
-        <section class="investor">
-
-            <div class="investor-title">
-                <h4>Backed by Leading Investor</h4>
-            </div>
-
-            <div class="investor-logo">
-                <img src="assets/investor/Sequoia.png" alt="sequoia">
-            </div>
-
-            <div class="investor-sub-title">
-                <p>who previously invested in</p>
-            </div>
-
-            <div class="investor-companies">
-
-                <img src="assets/investor/apple.svg" alt="apple">
-                <img src="assets/investor/google.svg" alt="google">
-                <img src="assets/investor/ola.svg" alt="ola">
-                <img src="assets/investor/Group.svg" alt="zomato">
-
-            </div>
-
-
-        </section>
-
-        
-        
-
-        <section class="how-we-do">
-
-
-            <div class="hwd-top-title">
-
-                <h4>HOW WE DO IT</h4>
-
-            </div>
-
-            <div class="hwd-title">
-
-                <h1>Doctors use Digital Twin Technology to Reverse Diabetes</h1>
-
-            </div>
-
-            <div class="hwd-sub-title">
-
-                <h3>Too good to be true? </h3>
-
-            </div>
-
-            <div class="hwd-btn-wrap">
-
-                <button class="hwd-btn"><img src="assets/Icons/watch video.svg" alt=""><span>WATCH TO LEARN MORE</span></button>
-
-            </div>
-
-        </section>
-
-
-        <section id="pricing">
-
-            <div class="pricing-title">
-                <h3>Pricing plan</h3>
-            </div>
-
-            <div class="pricing-sub-title">
-                <h5>
-                    GOOD HEALTH without Medcines is Priceless
-                </h5>
-            </div>
-
-            <div class="pricing-para">
-
-                <p>Average Diabetic spends Rs. 15 lakh on medicines in their lifetime</p>
-
-            </div>
-
-            <div class="pricing-content">
-
-                <div class="pricing-cnt-title">
-                    <h3>What is included in our Diabetes Reversal Program</h3>
-                </div>          
-                
-                <div class="pricing-service">
-
-                    <div class="pricing-top-service">
-                        <img src="assets/Doctor.svg" alt="">
-                    </div>
-                    <div class="pricing-grid-services">
-
-                        <img src="assets/sensor.svg" alt="sensors">
-                        <img src="assets/coach.svg" alt="coach">
-                        <img src="assets/labtest.svg" alt="labtest">
-                        <img src="assets/medicines.svg" alt="medicines">
-                        <img src="assets/247.svg" alt="24/7">
-                        <img src="assets/mobile.svg" alt="mobile">
-
-                    </div>
-
-                </div>
-
-                <div class="pricing-amount">
-
-                    <h1>₹ 8750 <span>/ month</span></h1>
-
-                </div>
-
-                <div class="pricing-btn-wrap">
-
-                    <a href="#" class="pricing-btn">
-                        GET STARTED <span><img src="assets/Icons/arrow.svg" alt=""></span>
-                    </a>
-                </div>
-
-
-            </div>
-
-
-
-        </section>
-
-        <section class="question">
-
-
-            <div class="question-title">
-                <h3>Still have questions?</h3>
-            </div>
-
-            <div class="question-subtitle">
-
-                <p>You can always contact us. We will answer you shortly!</p>
-
-            </div>
-
-            <div class="question-block-wrap">
-
-
-                <div class="question-block">
-
-                    <img src="assets/Icons/contact us.svg" alt="">
-                    <h2>+91 (222) 222-2222</h2>
-                    <h4>Whatsapp, SMS & Call available 24/7</h4>
-
-                </div>
-
-                <div class="question-block">
-
-                    <img src="assets/Icons/Chat.svg" alt="">
-                    <h2>Start Chat</h2>
-                    <h3><img src="assets/Icons/online.svg" alt=""><span>we are online</span></h3>
-                    <h4>Alternative way to get anwser faster.</h4>
-
-                </div>
-
-            </div>
-
-        </section>
-
-        <section class="bottom-sec">
-
-
-            <div class="bottom-block">
-
-                <img src="assets/Icons/trustpilot-logo.svg" alt="trustpilot-logo">
-                <div class="star-rating">
-
-                    <img src="assets/Icons/star.svg" alt="">
-                    <img src="assets/Icons/star.svg" alt="">
-                    <img src="assets/Icons/star.svg" alt="">
-                    <img src="assets/Icons/star.svg" alt="">
-                    <img src="assets/Icons/star.svg" alt="">
-                    
-                </div>
-
-                <div class="bottom-block-para">
-
-                    <p>
-                        <span>4.6 out of 5 stars</span> from 400 reviews
-                    </p>
-
-                </div>
-
-            </div>
-
-            <div class="bottom-block">
-
-                <img src="assets/Icons/like.svg" alt="trustpilot-logo">
-                
-
-                <div class="bottom-block-para">
-
-                    <p>
-                        We’re making <span>Healthcare as simple as</span> it can be
-                    </p>
-
-                </div>
-
-            </div>
-
-            <div class="bottom-block">
-
-                <img src="assets/Icons/logomark.svg" alt="trustpilot-logo">
-                
-
-                <div class="bottom-block-para">
-
-                    <p class="bottom-quote">
-                        Live a Healthy & Energetic Life with Twin
-                    </p>
-
-                </div>
-
-                <div class="bottom-block-icons">
-
-                   <a href="#"> <img src="assets/Icons/Google.svg" alt="google"></a>
-                    <a href="#"><img src="assets/Icons/Twitter.svg" alt="google"></a>
-                    <a href="#"><img src="assets/Icons/Insta.svg" alt="google"></a>
-
-                </div>
-
-            </div>
-
-            <!-- <div class="bottom-block-card">
+          </div>
+
+          <div class="pricing-amount">
+            <h1>₹ 8750 <span>/ month</span></h1>
+          </div>
+
+          <div class="pricing-btn-wrap">
+            <a href="#" class="pricing-btn">
+              ENROLL NOW
+              <span><img src="assets/Icons/arrow.svg" alt="" /></span>
+            </a>
+            <h4 class="pricing-btn-separator">OR</h4>
+            <a href="#" class="pricing-btn">
+              TALK TO DOCTOR
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="question">
+        <div class="question-title">
+          <h3>Still have questions?</h3>
+        </div>
+
+        <div class="question-subtitle">
+          <p>You can always contact us. We will answer you shortly!</p>
+        </div>
+
+        <div class="question-block-wrap">
+          <div class="question-block">
+            <img src="assets/Icons/contact us.svg" alt="" />
+            <h2>+91 (222) 222-2222</h2>
+            <h4>Whatsapp, SMS & Call available 24/7</h4>
+          </div>
+
+          <div class="question-block">
+            <img src="assets/Icons/Chat.svg" alt="" />
+            <h2>Start Chat</h2>
+            <h3>
+              <img src="assets/Icons/online.svg" alt="" /><span
+                >we are online</span
+              >
+            </h3>
+            <h4>Alternative way to get anwser faster.</h4>
+          </div>
+        </div>
+      </section>
+
+      <section class="bottom-sec">
+        <div class="bottom-block">
+          <img src="assets/Icons/trustpilot-logo.svg" alt="trustpilot-logo" />
+          <div class="star-rating">
+            <img src="assets/Icons/star.svg" alt="" />
+            <img src="assets/Icons/star.svg" alt="" />
+            <img src="assets/Icons/star.svg" alt="" />
+            <img src="assets/Icons/star.svg" alt="" />
+            <img src="assets/Icons/star.svg" alt="" />
+          </div>
+
+          <div class="bottom-block-para">
+            <p><span>4.6 out of 5 stars</span> from 400 reviews</p>
+          </div>
+        </div>
+
+        <div class="bottom-block">
+          <img src="assets/Icons/like.svg" alt="trustpilot-logo" />
+
+          <div class="bottom-block-para">
+            <p>We’re making <span>Healthcare as simple as</span> it can be</p>
+          </div>
+        </div>
+
+        <div class="bottom-block">
+          <img src="assets/Icons/logomark.svg" alt="trustpilot-logo" />
+
+          <div class="bottom-block-para">
+            <p class="bottom-quote">
+              Live a Healthy & Energetic Life with Twin
+            </p>
+          </div>
+
+          <div class="bottom-block-icons">
+            <a href="#"> <img src="assets/Icons/Google.svg" alt="google" /></a>
+            <a href="#"><img src="assets/Icons/Twitter.svg" alt="google" /></a>
+            <a href="#"><img src="assets/Icons/Insta.svg" alt="google" /></a>
+          </div>
+        </div>
+
+        <!-- <div class="bottom-block-card">
 
                 <div class="bottom-card-img-wrap">
                     <img src="assets/Icons/scenary.svg" alt="">
@@ -401,13 +309,8 @@
                 </div>
 
             </div> -->
-
-        </section>
-
+      </section>
     </div>
-
-    
-    
 
     <!--Static plugins integration-->
     <script src="plugins/jquery/jquery.min.js"></script>
@@ -416,13 +319,11 @@
     <script src="plugins/sticky/jquery.sticky.js"></script>
     <script src="plugins/isotopejs/isotope.min.js"></script>
     <script src="plugins/slick/slick/slick.min.js"></script>
-    
-    
 
     <!--Sites main js-->
     <script src="DOCTORS.js"></script>
     <script src="PATIENTS.js"></script>
     <script src="functions.js"></script>
     <script src="index.js"></script>
-</body>
+  </body>
 </html>

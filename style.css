@@ -10,13 +10,13 @@ html {
 }
 
 body {
-  background-color: #E5E5E5;
+  background-color: #e5e5e5;
   font-family: "HKGrotesk-Regular", sans-serif;
 }
 
 #site-wrapper {
   max-width: 360px;
-  background-color: #EEEEEE;
+  background-color: #eeeeee;
   position: relative;
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -47,7 +47,7 @@ header {
   position: relative;
   z-index: 1;
   max-width: 360px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   position: relative;
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -63,8 +63,8 @@ header {
 .header-btn {
   width: 107px;
   height: 48px;
-  background-color: #FFFFFF;
-  border: 1px solid #DDDDDD;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
   border-radius: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -88,7 +88,7 @@ header {
 }
 
 .header-btn span {
-  color: #FF5A00;
+  color: #ff5a00;
   font-size: 14px;
   text-align: left;
   line-height: 18px;
@@ -119,8 +119,8 @@ header {
       -ms-flex-direction: column;
           flex-direction: column;
   position: relative;
-  background: -webkit-gradient(linear, left top, left bottom, from(#00CC75), color-stop(100%, #0BAF6A), to(#017A47));
-  background: linear-gradient(180deg, #00CC75 0%, #0BAF6A 100%, #017A47 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#00cc75), color-stop(100%, #0baf6a), to(#017a47));
+  background: linear-gradient(180deg, #00cc75 0%, #0baf6a 100%, #017a47 100%);
   color: #ffffff;
   padding: 40px 0;
 }
@@ -232,7 +232,7 @@ header {
   font-size: 16px;
   color: #666666;
   padding: 3px 10px;
-  border: 1px solid #EEEEEE;
+  border: 1px solid #eeeeee;
   border-radius: 17px;
   text-transform: capitalize;
   margin-right: 10px;
@@ -251,18 +251,18 @@ header {
 }
 
 #doctor-grid-buttons a.active {
-  border-color: #03A750;
+  border-color: #03a750;
 }
 
 .doctors {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .doctors-title h2 {
   font-family: "HKGrotesk-Bold", sans-serif;
   font-size: 28px;
   font-weight: bold;
-  color: #183B56;
+  color: #183b56;
   text-align: center;
   padding: 0 20px;
   line-height: 36px;
@@ -315,8 +315,8 @@ header {
   height: -moz-fit-content;
   height: fit-content;
   padding: 3px;
-  background: -webkit-gradient(linear, left top, right top, from(#00A651), to(#B2D433));
-  background: linear-gradient(to right, #00A651 0%, #B2D433 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#00a651), to(#b2d433));
+  background: linear-gradient(to right, #00a651 0%, #b2d433 100%);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -346,14 +346,14 @@ header {
 }
 
 #doctor-info {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   padding: 15px 40px 25px 40px;
 }
 
 .name-title h4 {
   font-family: "HKGrotesk-Bold", sans-serif;
   font-size: 24px;
-  color: #02783A;
+  color: #02783a;
   margin-bottom: 0;
 }
 
@@ -401,12 +401,12 @@ header {
 .doctor-block h4 {
   font-family: "HKGrotesk-SemiBold", sans-serif;
   font-size: 20px;
-  color: #02783A;
+  color: #02783a;
   margin-bottom: 0;
 }
 
 .patients {
-  background-color: #E8F5E9;
+  background-color: #e8f5e9;
   margin-top: 8px;
   text-align: center;
   padding: 30px 0;
@@ -415,7 +415,7 @@ header {
 
 .patients-title h2 {
   font-family: "HKGrotesk-Bold", sans-serif;
-  color: #183B56;
+  color: #183b56;
   font-size: 28px;
   font-weight: bold;
   margin-bottom: 0;
@@ -428,7 +428,7 @@ header {
 .patients-sub-title h5 {
   margin-bottom: 0;
   font-size: 19px;
-  color: #5A7184;
+  color: #5a7184;
   margin-top: 10px;
   margin-bottom: 10px;
   line-height: 28px;
@@ -447,7 +447,7 @@ header {
   cursor: pointer;
   -webkit-transition: width 0.3s cubic-bezier(0.8, 0.5, 0.2, 1.4);
   transition: width 0.3s cubic-bezier(0.8, 0.5, 0.2, 1.4);
-  border: 3px solid #E8F5E9;
+  border: 3px solid #e8f5e9;
   border-radius: 50%;
 }
 
@@ -481,8 +481,8 @@ header {
   height: -moz-fit-content;
   height: fit-content;
   padding: 3px;
-  background: -webkit-gradient(linear, left top, right top, from(#00A651), to(#B2D433));
-  background: linear-gradient(to right, #00A651 0%, #B2D433 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#00a651), to(#b2d433));
+  background: linear-gradient(to right, #00a651 0%, #b2d433 100%);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -530,7 +530,7 @@ header {
   height: 10px;
   border-radius: 50%;
   border: none;
-  background-color: #B3BAC5;
+  background-color: #b3bac5;
   cursor: pointer;
   margin-left: 10px;
   -webkit-transition: all 0.3s ease;
@@ -542,7 +542,7 @@ header {
 }
 
 .slick-dots .slick-active {
-  background-color: #109C66;
+  background-color: #109c66;
 }
 
 .slick-slide:focus {
@@ -552,7 +552,7 @@ header {
 #patient-info {
   padding: 30px 40px;
   text-align: center;
-  background-color: #E8F5E9;
+  background-color: #e8f5e9;
   position: relative;
 }
 
@@ -565,7 +565,7 @@ header {
 .patient-name h3 {
   font-family: "HKGrotesk-Bold", sans-serif;
   margin-bottom: 0;
-  color: #02783A;
+  color: #02783a;
   font-weight: bold;
   font-size: 28px;
 }
@@ -604,7 +604,7 @@ header {
 
 .basic-content h4 {
   margin-bottom: 0;
-  color: #388E3C;
+  color: #388e3c;
   font-weight: bold;
   font-size: 22px;
 }
@@ -635,7 +635,7 @@ header {
       -ms-flex-align: center;
           align-items: center;
   background-color: white;
-  border: 1px solid #DDDDDD;
+  border: 1px solid #dddddd;
   border-radius: 16px;
   padding-bottom: 8px;
   margin-bottom: 18px;
@@ -669,13 +669,13 @@ header {
 }
 
 .patient-desease-card .points-before {
-  background: -webkit-gradient(linear, left top, left bottom, from(#EAA3A3), to(#FF3131));
-  background: linear-gradient(180deg, #EAA3A3 0%, #FF3131 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#eaa3a3), to(#ff3131));
+  background: linear-gradient(180deg, #eaa3a3 0%, #ff3131 100%);
 }
 
 .patient-desease-card .points-after {
-  background: -webkit-gradient(linear, left top, left bottom, from(#7FE4B3), to(#03A750));
-  background: linear-gradient(180deg, #7FE4B3 0%, #03A750 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#7fe4b3), to(#03a750));
+  background: linear-gradient(180deg, #7fe4b3 0%, #03a750 100%);
 }
 
 .patient-desease-card .points {
@@ -719,7 +719,7 @@ header {
 }
 
 .investor {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   margin-top: 8px;
   width: 100%;
   padding-bottom: 25px;
@@ -747,7 +747,7 @@ header {
 .investor-sub-title p {
   margin: 0;
   font-size: 11px;
-  color: #5A7184;
+  color: #5a7184;
 }
 
 .investor-companies {
@@ -764,7 +764,7 @@ header {
 }
 
 .how-we-do {
-  background-color: #CEFFDF;
+  background-color: #ceffdf;
   margin-top: 8px;
   padding: 40px 30px;
   padding-bottom: 55px;
@@ -774,14 +774,14 @@ header {
 .hwd-top-title h4 {
   font-size: 16px;
   font-weight: bold;
-  color: #36B37E;
+  color: #36b37e;
   letter-spacing: 2px;
 }
 
 .hwd-title h1 {
   font-weight: bold;
   font-size: 32px;
-  color: #183B56;
+  color: #183b56;
   line-height: 42px;
   margin-top: 20px;
 }
@@ -804,10 +804,10 @@ header {
 }
 
 .hwd-btn-wrap button {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border-radius: 30px 30px;
   padding: 6px;
-  border: 2px solid #36B37E;
+  border: 2px solid #36b37e;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -826,15 +826,15 @@ header {
 }
 
 .hwd-btn-wrap button:hover {
-  border-color: #183B56;
+  border-color: #183b56;
 }
 
 .hwd-btn-wrap button:hover span {
-  color: #183B56;
+  color: #183b56;
 }
 
 .hwd-btn-wrap button span {
-  color: #01A751;
+  color: #01a751;
   font-weight: bold;
   font-size: 16px;
   margin-left: 8px;
@@ -843,8 +843,16 @@ header {
   transition: all 0.3s ease;
 }
 
+.pricing-btn-separator {
+  margin-bottom: 0;
+  color: #183b56;
+  font-size: 20px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
 #pricing {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   margin-top: 8px;
   padding: 45px 40px;
   text-align: center;
@@ -853,7 +861,7 @@ header {
 .pricing-title h3 {
   font-family: "HKGrotesk-Bold", sans-serif;
   font-weight: bold;
-  color: #183B56;
+  color: #183b56;
   margin-bottom: 0;
 }
 
@@ -863,7 +871,7 @@ header {
   font-size: 18px;
   color: #666666;
   font-weight: bold;
-  letter-spacing: 0.10px;
+  letter-spacing: 0.1px;
   line-height: 32px;
   margin-bottom: 0;
   margin-top: 12px;
@@ -872,7 +880,7 @@ header {
 
 .pricing-para p {
   font-size: 16px;
-  color: #5A7184;
+  color: #5a7184;
   font-style: normal;
   line-height: 24px;
   margin-bottom: 0;
@@ -880,7 +888,7 @@ header {
 }
 
 .pricing-content {
-  background-color: #CEFFDF;
+  background-color: #ceffdf;
   border-radius: 9px;
   position: relative;
   overflow: hidden;
@@ -893,14 +901,14 @@ header {
   content: "";
   width: 100%;
   height: 3px;
-  background-color: #36B37E;
+  background-color: #36b37e;
   position: absolute;
   top: 0;
   left: 0;
 }
 
 .pricing-cnt-title h3 {
-  color: #183B56;
+  color: #183b56;
   font-size: 24px;
   font-weight: bold;
   padding: 0 5px;
@@ -935,7 +943,7 @@ header {
 .pricing-amount {
   text-align: left;
   padding-left: 15px;
-  border-top: 1px solid #E5EAF4;
+  border-top: 1px solid #e5eaf4;
   margin-top: 15px;
 }
 
@@ -943,14 +951,14 @@ header {
   font-family: "HKGrotesk-Bold", sans-serif;
   font-size: 40px;
   font-weight: bold;
-  color: #2F9D6E;
+  color: #2f9d6e;
   line-height: 48px;
   margin-top: 15px;
 }
 
 .pricing-amount h1 span {
   font-family: "HKGrotesk-Regular", sans-serif;
-  color: #5A7184;
+  color: #5a7184;
   font-size: 18px;
   font-weight: normal;
 }
@@ -960,7 +968,7 @@ header {
 }
 
 .pricing-btn {
-  background-color: #2F9D6E;
+  background-color: #2f9d6e;
   color: white;
   font-size: 18px;
   font-weight: bold;
@@ -971,6 +979,10 @@ header {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   margin-top: 18px;
+}
+
+.pricing-btn:last-child {
+  margin-top: 0;
 }
 
 .pricing-btn:hover {
@@ -990,7 +1002,7 @@ header {
   padding: 60px 40px;
   padding-bottom: 40px;
   text-align: center;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .question-title h3 {
@@ -998,13 +1010,13 @@ header {
   margin-bottom: 0;
   font-size: 24px;
   font-weight: bold;
-  color: #183B56;
+  color: #183b56;
 }
 
 .question-subtitle p {
   font-size: 16px;
   line-height: 26px;
-  color: #5A7184;
+  color: #5a7184;
   margin-top: 20px;
   margin-bottom: 30px;
 }
@@ -1014,7 +1026,7 @@ header {
 }
 
 .question-block {
-  border: 1px solid #E5EAF4;
+  border: 1px solid #e5eaf4;
   padding: 30px 5px;
   border-radius: 8px;
   margin-bottom: 15px;
@@ -1031,14 +1043,14 @@ header {
   font-family: "HKGrotesk-Bold", sans-serif;
   font-weight: bold;
   font-size: 22px;
-  color: #183B56;
+  color: #183b56;
   margin: 0;
   margin-top: 15px;
   margin-bottom: 8px;
 }
 
 .question-block h3 {
-  color: #00A651;
+  color: #00a651;
   font-size: 14px;
   text-transform: uppercase;
   margin: 0;
@@ -1050,7 +1062,7 @@ header {
 }
 
 .question-block h4 {
-  color: #5A7184;
+  color: #5a7184;
   font-size: 14px;
   margin: 0;
 }
@@ -1058,7 +1070,7 @@ header {
 .bottom-sec {
   text-align: center;
   padding: 40px 30px 100px 30px;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   margin-top: 8px;
 }
 
@@ -1082,7 +1094,7 @@ header {
 
 .bottom-block .bottom-quote {
   font-size: 12px;
-  color: #5A7184;
+  color: #5a7184;
   margin-top: 5px;
 }
 
@@ -1104,7 +1116,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border: 1px solid #EEEEEE;
+  border: 1px solid #eeeeee;
   border-radius: 52px;
   -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
           box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
@@ -1128,7 +1140,7 @@ header {
 
 .bottom-block-card h6 {
   text-transform: uppercase;
-  color: #36B37E;
+  color: #36b37e;
   font-weight: bold;
 }
 /*# sourceMappingURL=style.css.map */
