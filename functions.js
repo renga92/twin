@@ -273,3 +273,31 @@ function patientInfoSlick() {
     $("#patient-slider").slick("slickGoTo", slide);
   });
 }
+
+// Function to play video on button click, and hides
+// the thumbnail
+function playVideoOnClick() {
+  $("#twin_video_play_btn").on("click", function () {
+    $(".video-thumb").css({ opacity: "0" });
+    $(this).hide();
+
+    let nativeVideo = document.getElementById("twin_digital_video");
+    nativeVideo.play();
+  });
+}
+
+function playVideoFromOutside() {
+  $("#twin_video_play_btn2").on("click", function () {
+    isPlaying = false;
+    $(".video-thumb").css({ opacity: "0" });
+    $("#twin_video_play_btn").hide();
+    let nativeVideo = document.getElementById("twin_digital_video");
+
+    if (isPlaying) {
+      return;
+    } else {
+      isPlaying = true;
+      nativeVideo.play();
+    }
+  });
+}

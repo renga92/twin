@@ -9,6 +9,8 @@ $(function () {
   patientsIsotope();
   patientInfoSlick();
   changeDoctorSelection();
+  playVideoOnClick();
+  playVideoFromOutside();
 
   $("#sticky-header").sticky({
     topSpacing: 0,
